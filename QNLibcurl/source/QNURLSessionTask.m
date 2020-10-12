@@ -241,8 +241,8 @@ int CurlProgressCallback(void *client, double downloadTotal, double downloadNow,
     qn_curl_easy_setopt(curl, CURLOPT_HEADERFUNCTION, CurlReceiveHeaderCallback, error, @"header function set 0 error");
     qn_curl_easy_setopt(curl, CURLOPT_HEADERDATA, self, error, @"header function set 1 error");
     
-    qn_curl_easy_setopt(curl, CURLOPT_READFUNCTION, CurlReadCallback, error, @"read function set 0 error");
-    qn_curl_easy_setopt(curl, CURLOPT_READDATA, self, error, @"read function set 1 error");
+//    qn_curl_easy_setopt(curl, CURLOPT_READFUNCTION, CurlReadCallback, error, @"read function set 0 error");
+//    qn_curl_easy_setopt(curl, CURLOPT_READDATA, self, error, @"read function set 1 error");
     
     qn_curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, CurlWriteCallback, error, @"write function set 0 error");
     qn_curl_easy_setopt(curl, CURLOPT_WRITEDATA, self, error, @"write function set 1 error");
@@ -276,12 +276,14 @@ int CurlProgressCallback(void *client, double downloadTotal, double downloadNow,
     curl_easy_setopt(curl, CURLOPT_TCP_KEEPINTVL, 10L);
     curl_easy_setopt(curl, CURLOPT_TCP_FASTOPEN, 1L);
     
+//    curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
+    
 //    curl_easy_setopt(curl, CURLOPT_MAXCONNECTS, 0L);
 //    curl_easy_setopt(curl, CURLOPT_FORBID_REUSE, 1L);
     curl_easy_setopt(curl, CURLOPT_DNS_CACHE_TIMEOUT, 10L);
     curl_easy_setopt(curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_3 /*| CURL_HTTP_VERSION_2_0 | CURL_HTTP_VERSION_1_1 | CURL_HTTP_VERSION_1_0*/);
     curl_easy_setopt(curl, CURLOPT_SSLVERSION, CURL_SSLVERSION_DEFAULT);
-    curl_easy_setopt(curl, CURLOPT_SSL_CIPHER_LIST, [@"ALL" UTF8String]);
+//    curl_easy_setopt(curl, CURLOPT_SSL_CIPHER_LIST, [@"ALL" UTF8String]);
     curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 1L);
     curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 1L);
     curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST,nil);
@@ -330,7 +332,9 @@ int CurlProgressCallback(void *client, double downloadTotal, double downloadNow,
    
 - (void)initCurlRequestBody:(CURL *)curl error:(NSError **)error{
     //body
+//    qn_curl_easy_setopt(curl, CURLOPT_INFILESIZE_LARGE, (curl_off_t)self.uploadData.length, error, @"body set error");
     qn_curl_easy_setopt(curl, CURLOPT_POSTFIELDSIZE, (curl_off_t)self.uploadData.length, error, @"body set error");
+    qn_curl_easy_setopt(curl, CURLOPT_POSTFIELDS, [self.uploadData bytes], error, @"body set error");
 }
 
 - (void)initCurlRequestMethod:(CURL *)curl error:(NSError **)error{
@@ -400,11 +404,11 @@ int CurlProgressCallback(void *client, double downloadTotal, double downloadNow,
         if (error) {
             goto curl_perform_complete;
         }
+        [strongSelf initCurlRequestBody:curl error:&error];
         [strongSelf initCurlRequestMethod:curl error:&error];
         if (error) {
             goto curl_perform_complete;
         }
-        [strongSelf initCurlRequestBody:curl error:&error];
         if (error) {
             goto curl_perform_complete;
         }
