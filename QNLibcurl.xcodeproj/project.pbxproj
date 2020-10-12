@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		319AC1DF24F65AEB0050BD8C /* QNlibcurl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 319AC1DC24F65AEB0050BD8C /* QNlibcurl.h */; };
+		319AC1EE24F65D510050BD8C /* QNURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A9FCF924F3AB2F0082666A /* QNURLSession.m */; };
+		319AC1EF24F65D540050BD8C /* QNURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A9FD0124F3AFEC0082666A /* QNURLSessionConfiguration.m */; };
+		319AC1F024F65D560050BD8C /* QNURLSessionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A9FD1024F50FC10082666A /* QNURLSessionTask.m */; };
+		319AC1FA24F65D6D0050BD8C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A9FC9624F363110082666A /* libcrypto.a */; };
+		319AC1FB24F65D6D0050BD8C /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A9FC9424F363110082666A /* libcurl.a */; };
+		319AC1FC24F65D6D0050BD8C /* libnghttp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A9FC9824F363110082666A /* libnghttp2.a */; };
+		319AC1FD24F65D6D0050BD8C /* libnghttp3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A9FC9924F363110082666A /* libnghttp3.a */; };
+		319AC1FE24F65D6D0050BD8C /* libngtcp2_crypto_openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A9FC9524F363110082666A /* libngtcp2_crypto_openssl.a */; };
+		319AC1FF24F65D6D0050BD8C /* libngtcp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A9FC9724F363110082666A /* libngtcp2.a */; };
+		319AC20024F65D6D0050BD8C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A9FC9324F363110082666A /* libssl.a */; };
+		319AC24B24F664D40050BD8C /* QNURLSession.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31A9FCF824F3AB2F0082666A /* QNURLSession.h */; };
+		319AC24C24F664D40050BD8C /* QNURLSessionConfiguration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31A9FD0024F3AFEC0082666A /* QNURLSessionConfiguration.h */; };
+		319AC24D24F664D40050BD8C /* QNURLSessionTask.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31A9FD0F24F50FC10082666A /* QNURLSessionTask.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		319AC1D824F65AEA0050BD8C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				319AC24B24F664D40050BD8C /* QNURLSession.h in CopyFiles */,
+				319AC24C24F664D40050BD8C /* QNURLSessionConfiguration.h in CopyFiles */,
+				319AC24D24F664D40050BD8C /* QNURLSessionTask.h in CopyFiles */,
+				319AC1DF24F65AEB0050BD8C /* QNlibcurl.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		319AC1DA24F65AEB0050BD8C /* libQNlibcurl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQNlibcurl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		319AC1DC24F65AEB0050BD8C /* QNlibcurl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNlibcurl.h; sourceTree = "<group>"; };
+		31A9FC9324F363110082666A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		31A9FC9424F363110082666A /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		31A9FC9524F363110082666A /* libngtcp2_crypto_openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libngtcp2_crypto_openssl.a; sourceTree = "<group>"; };
+		31A9FC9624F363110082666A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		31A9FC9724F363110082666A /* libngtcp2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libngtcp2.a; sourceTree = "<group>"; };
+		31A9FC9824F363110082666A /* libnghttp2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnghttp2.a; sourceTree = "<group>"; };
+		31A9FC9924F363110082666A /* libnghttp3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnghttp3.a; sourceTree = "<group>"; };
+		31A9FCA224F3631C0082666A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		31A9FCDE24F36D850082666A /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		31A9FCDF24F36D850082666A /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		31A9FCE024F36D850082666A /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		31A9FCE124F36D850082666A /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		31A9FCE224F36D850082666A /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		31A9FCE324F36D850082666A /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		31A9FCE424F36D850082666A /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		31A9FCE524F36D850082666A /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		31A9FCE624F36D850082666A /* urlapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = urlapi.h; sourceTree = "<group>"; };
+		31A9FCF824F3AB2F0082666A /* QNURLSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNURLSession.h; sourceTree = "<group>"; };
+		31A9FCF924F3AB2F0082666A /* QNURLSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNURLSession.m; sourceTree = "<group>"; };
+		31A9FD0024F3AFEC0082666A /* QNURLSessionConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNURLSessionConfiguration.h; sourceTree = "<group>"; };
+		31A9FD0124F3AFEC0082666A /* QNURLSessionConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNURLSessionConfiguration.m; sourceTree = "<group>"; };
+		31A9FD0F24F50FC10082666A /* QNURLSessionTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNURLSessionTask.h; sourceTree = "<group>"; };
+		31A9FD1024F50FC10082666A /* QNURLSessionTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNURLSessionTask.m; sourceTree = "<group>"; };
+		31F2DBC92518B51600D9AA89 /* cacert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cacert.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		319AC1D724F65AEA0050BD8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319AC1FA24F65D6D0050BD8C /* libcrypto.a in Frameworks */,
+				319AC1FF24F65D6D0050BD8C /* libngtcp2.a in Frameworks */,
+				319AC20024F65D6D0050BD8C /* libssl.a in Frameworks */,
+				319AC1FC24F65D6D0050BD8C /* libnghttp2.a in Frameworks */,
+				319AC1FD24F65D6D0050BD8C /* libnghttp3.a in Frameworks */,
+				319AC1FE24F65D6D0050BD8C /* libngtcp2_crypto_openssl.a in Frameworks */,
+				319AC1FB24F65D6D0050BD8C /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31A9FC7D24F362A10082666A = {
+			isa = PBXGroup;
+			children = (
+				31A9FC8924F362A10082666A /* QNLibcurl */,
+				31A9FC8824F362A10082666A /* Products */,
+				31A9FCA124F3631C0082666A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31A9FC8824F362A10082666A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				319AC1DA24F65AEB0050BD8C /* libQNlibcurl.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31A9FC8924F362A10082666A /* QNLibcurl */ = {
+			isa = PBXGroup;
+			children = (
+				319AC1DC24F65AEB0050BD8C /* QNlibcurl.h */,
+				31A9FCF724F3A6D00082666A /* source */,
+				31A9FC9224F362D80082666A /* libs */,
+			);
+			path = QNLibcurl;
+			sourceTree = "<group>";
+		};
+		31A9FC9224F362D80082666A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				31F2DBC92518B51600D9AA89 /* cacert.pem */,
+				31A9FCDD24F36D850082666A /* curl */,
+				31A9FC9624F363110082666A /* libcrypto.a */,
+				31A9FC9424F363110082666A /* libcurl.a */,
+				31A9FC9824F363110082666A /* libnghttp2.a */,
+				31A9FC9924F363110082666A /* libnghttp3.a */,
+				31A9FC9524F363110082666A /* libngtcp2_crypto_openssl.a */,
+				31A9FC9724F363110082666A /* libngtcp2.a */,
+				31A9FC9324F363110082666A /* libssl.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		31A9FCA124F3631C0082666A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31A9FCA224F3631C0082666A /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31A9FCDD24F36D850082666A /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				31A9FCDE24F36D850082666A /* stdcheaders.h */,
+				31A9FCDF24F36D850082666A /* mprintf.h */,
+				31A9FCE024F36D850082666A /* easy.h */,
+				31A9FCE124F36D850082666A /* curl.h */,
+				31A9FCE224F36D850082666A /* curlver.h */,
+				31A9FCE324F36D850082666A /* system.h */,
+				31A9FCE424F36D850082666A /* typecheck-gcc.h */,
+				31A9FCE524F36D850082666A /* multi.h */,
+				31A9FCE624F36D850082666A /* urlapi.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		31A9FCF724F3A6D00082666A /* source */ = {
+			isa = PBXGroup;
+			children = (
+				31A9FCF824F3AB2F0082666A /* QNURLSession.h */,
+				31A9FCF924F3AB2F0082666A /* QNURLSession.m */,
+				31A9FD0024F3AFEC0082666A /* QNURLSessionConfiguration.h */,
+				31A9FD0124F3AFEC0082666A /* QNURLSessionConfiguration.m */,
+				31A9FD0F24F50FC10082666A /* QNURLSessionTask.h */,
+				31A9FD1024F50FC10082666A /* QNURLSessionTask.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		319AC1D924F65AEA0050BD8C /* QNlibcurl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319AC1E024F65AEB0050BD8C /* Build configuration list for PBXNativeTarget "QNlibcurl" */;
+			buildPhases = (
+				319AC1D624F65AEA0050BD8C /* Sources */,
+				319AC1D724F65AEA0050BD8C /* Frameworks */,
+				319AC1D824F65AEA0050BD8C /* CopyFiles */,
+				31A0700124FF96F30067D718 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QNlibcurl;
+			productName = QNlibcurl;
+			productReference = 319AC1DA24F65AEB0050BD8C /* libQNlibcurl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31A9FC7E24F362A10082666A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = yangsen;
+				TargetAttributes = {
+					319AC1D924F65AEA0050BD8C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 31A9FC8124F362A10082666A /* Build configuration list for PBXProject "QNLibcurl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31A9FC7D24F362A10082666A;
+			productRefGroup = 31A9FC8824F362A10082666A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				319AC1D924F65AEA0050BD8C /* QNlibcurl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31A0700124FF96F30067D718 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -f $CONFIGURATION_BUILD_DIR/QNlibcurl.a\nmv $CONFIGURATION_BUILD_DIR/libQNlibcurl.a $CONFIGURATION_BUILD_DIR/QNlibcurl.a \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		319AC1D624F65AEA0050BD8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319AC1EF24F65D540050BD8C /* QNURLSessionConfiguration.m in Sources */,
+				319AC1F024F65D560050BD8C /* QNURLSessionTask.m in Sources */,
+				319AC1EE24F65D510050BD8C /* QNURLSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		319AC1E124F65AEB0050BD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QNLibcurl/libs",
+				);
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		319AC1E224F65AEB0050BD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QNLibcurl/libs",
+				);
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		31A9FC8D24F362A10082666A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31A9FC8E24F362A10082666A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		319AC1E024F65AEB0050BD8C /* Build configuration list for PBXNativeTarget "QNlibcurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319AC1E124F65AEB0050BD8C /* Debug */,
+				319AC1E224F65AEB0050BD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A9FC8124F362A10082666A /* Build configuration list for PBXProject "QNLibcurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A9FC8D24F362A10082666A /* Debug */,
+				31A9FC8E24F362A10082666A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31A9FC7E24F362A10082666A /* Project object */;
+}
